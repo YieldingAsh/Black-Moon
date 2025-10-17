@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Navegación</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="carrusel.js" defer></script>
+  <script src="filtro-productos.js" defer></script>
+</head>
+
+<body>
+  <!-- Barra superior -->
+  <nav class="navbar">
+    <div class="logo">Black Moon</div>
+    <ul class="nav-links">
+      <li><a href="#" class="neon-button">Inicio</a></li>
+      <li><a href="#" class="neon-button">Stock</a></li>
+      <li><a href="#" class="neon-button">Acerca</a></li>
+      <li><a href="#" class="neon-button">Comprar</a></li>
+    </ul>
+  </nav>
+  <!-- Carrusel -->
+  <section class="carrusel">
+    <div class="carrusel-contenedor">
+      <div class="carrusel-slide fade">
+        <img src="https://i.pinimg.com/1200x/a3/0f/8f/a30f8fb06f92e57e56d5e76302b11b5f.jpg" alt="Imagen 1">
+      </div>
+      <div class="carrusel-slide fade">
+        <img src="https://i.pinimg.com/1200x/36/ad/90/36ad905be05761f26b5e82e034be6ba5.jpg" alt="Imagen 2">
+      </div>
+      <div class="carrusel-slide fade">
+        <img src="https://i.pinimg.com/1200x/17/8c/14/178c14fffda5b9a41da843530612a1e6.jpg" alt="Imagen 3">
+      </div>
+    </div>
+  </section>
+  <!-- Barra de menus desplegables -->
+  <div class="menu-d">
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Productos ▾</a>
+        <ul class="submenu">
+          <li><a href="#">Ropa</a></li>
+          <li>
+            <a href="#">Vapers ▸</a>
+            <ul class="submenu-nivel2">
+              <li><a href="#">Elfbard</a></li>
+              <li><a href="#">Blow</a></li>
+              <li><a href="#">Torch</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Dispositivos electricos</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Redes</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- Buscador con filtros -->
+<section class="filtros">
+  <input type="text" id="buscador" placeholder="Buscar producto..." />
+
+  <div class="tags">
+    <div class="tag-group">
+      <h4>Categoría</h4>
+      <label><input type="checkbox" value="Ropa"> Ropa</label>
+      <label><input type="checkbox" value="Electrónica"> Electrónica</label>
+      <label><input type="checkbox" value="Vapers"> Vapers</label>
+    </div>
+
+    <div class="tag-group">
+      <h4>Precio</h4>
+      <label><input type="checkbox" value="Barato"> Barato</label>
+      <label><input type="checkbox" value="Caro"> Caro</label>
+    </div>
+
+    <div class="tag-group">
+      <h4>Disponibilidad</h4>
+      <label><input type="checkbox" value="En stock"> En stock</label>
+      <label><input type="checkbox" value="Agotado"> Agotado</label>
+    </div>
+  </div>
+</section>
+
+<!-- Lista de productos -->
+<section class="productos" id="lista-productos">
+  <div class="producto" data-tags="Ropa,Barato,En stock">
+    <h3>Remera Azul</h3>
+    <p>Ropa casual cómoda</p>
+  </div>
+  <div class="producto" data-tags="Electrónica,Caro,En stock">
+    <h3>Smartphone X</h3>
+    <p>Último modelo con cámara pro</p>
+  </div>
+  <div class="producto" data-tags="Ropa,Caro,Agotado">
+    <h3>Campera de Cuero</h3>
+    <p>Ropa premium de alta calidad</p>
+  </div>
+  <div class="producto" data-tags="Electrónica,Barato,En stock">
+    <h3>Auriculares Económicos</h3>
+    <p>Buena calidad a bajo precio</p>
+  </div>
+  <div class="producto" data-tags="Ropa,Barato,Agotado">
+    <h3>Pantalón Deportivo</h3>
+    <p>Ideal para entrenar</p>
+  </div>
+  <div class="producto" data-tags="Ropa,Barato,Agotado">
+    <h3>Pantalón Deportivo</h3>
+    <p>Ideal para entrenar</p>
+  </div>
+  <div class="producto" data-tags="Ropa,Barato,Agotado">
+    <h3>Pantalón Deportivo</h3>
+    <p>Ideal para entrenar</p>
+  </div>
+  <div class="producto" data-tags="Ropa,Barato,Agotado">
+    <h3>Pantalón Deportivo</h3>
+    <p>Ideal para entrenar</p>
+  </div>
+  <div class="producto" data-tags="Vapers,Barato,Agotado">
+    <h3>Pantalón Vapers</h3>
+    <p>Ideal para entrenar</p>
+  </div>
+</section>
+</body>
+</html>
